@@ -2,6 +2,7 @@
 display: flex;
 flex-direction: column;
 overflow-x: hidden;
+
 }
 /* desktop */
 @media (min-width:960px) {
@@ -9,8 +10,11 @@ overflow-x: hidden;
         flex-direction: row;
     }
     .homeTop {
-        width: calc(100vw - 60px);
+        width: 100vw;
         height: 100vh;
+    }
+    .Home{
+        margin-left: 60px;
     }
 }
 
@@ -18,7 +22,7 @@ overflow-x: hidden;
 /* tablet and mobile */
 @media (max-width:959px){
     .homeTop {
-        height: calc(100vh - 60px);
+        height: 100vh;
     }
 }
 .homeTop {
@@ -28,7 +32,36 @@ overflow-x: hidden;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../Assets/workspace4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    
+    background-position: top right;
+   
     
 }
+.homeTop h1 {
+    font-size: 50pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
 
+.homeMid {
+    background: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url('../Assets/workspace.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:500px;
+    background-position: bottom right;
+}
+.homeBottom h1 {
+    font-size: 50pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}

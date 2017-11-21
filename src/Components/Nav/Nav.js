@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import './Nav.css';
 import { Link } from 'react-router-dom';
+// main logo
 import gdLogoWhite from '../Assets/gdLogoWhite.png';
+// nav icons
+import ProjectIcon from '../Assets/codeIconWhite.png';
+import ContactIcon from '../Assets/contactWhite.png';
+import AboutIcon from '../Assets/aboutWhite.png';
+import SkillsIcon from '../Assets/skillsWhite1.png';
+
+// social icons 
 import fbLogo from '../Assets/facebookWhite.png';
 import LinLogo from '../Assets/linkedInWhite.png';
 import pinLogo from '../Assets/pinterestWhite.png';
@@ -15,16 +23,16 @@ class Nav extends Component {
 
 
                     <div className='navSection logoNav'>
-                        <div className='imageHolder'>
+                        <div className='gdLogoHolder'>
                             <Link to={'/'}><img src={gdLogoWhite} alt='GD' className='gdLogo' /> </Link>
                         </div>
                     </div>
 
                     <div className='navSection centerNav'>
-                        <Link to={'/about'}> ABOUT </Link>
-                        <Link to={'/projects'}> PROJECTS </Link>
-                        <Link to={'/skills'}> SKILLS </Link>
-                        <Link to={'/contact'}> CONTACT</Link>
+                        <Link to={'/about'}><div className='imgLinkHolder'><img src={AboutIcon} /><p className='linkName'>ABOUT</p></div></Link>
+                        <Link to={'/projects'}><div className='imgLinkHolder'><img src={ProjectIcon} /><p className='linkName'>PROJECTS</p></div></Link>
+                        <Link to={'/skills'}><div className='imgLinkHolder'><img src={SkillsIcon} /><p className='linkName'>SKILLS</p></div></Link>
+                        <Link to={'/contact'}><div className='imgLinkHolder'><img src={ContactIcon} /><p className='linkName'>CONTACT</p></div></Link>
                     </div>
 
                     <div className='navSection rightNav'>

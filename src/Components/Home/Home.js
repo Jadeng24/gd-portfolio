@@ -25,9 +25,13 @@ class Home extends Component {
                     <div className='homeTop'>
                         <h1>Web developer</h1>
                     </div>
+                    <div className='homeMid'>
+                        <p>content</p>
+                    </div>
 
-
-
+                    <div className='homeBottom'>
+                        <h1>Web developer</h1>
+                    </div>
 
 
 
