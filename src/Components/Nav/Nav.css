@@ -1,0 +1,51 @@
+.NavHolder {
+    width: 100vw;
+    height: 70px;
+    background: #181818;
+}
+.Nav {
+    display: flex;
+    align-items: center;
+}
+.Nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    line-height: 18pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imageHolder {
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gdLogo {
+    padding: 0px 2px;
+    height: 30px;
+    filter: invert(100%);
+    background: white;
+    border-radius: 50px;
+    transition: .1s;
+}
+.gdLogo:hover {
+    filter: hue-rotate(180deg);
+    background: #DF672E;
+
+}
+.gdLogo:active {
+    background: white;
+    filter: invert(100%);
+}
+.imageMask {
+    /* position: absolute; */
+    height: 42px; 
+    border-radius: 35px;
+    width: 100%;
+    background: rgb(0, 126, 252);
+}
+.imageMask:hover {
+    
+    
+}
