@@ -1,21 +1,36 @@
 .NavHolder {
     width: 100vw;
-    height: 70px;
+    height: 60px;
     background: #181818;
+    
 }
+
 .Nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+/* nav links */
+.navSection {
+display: flex;
+justify-content:space-around;
+align-items: center;
 }
 .Nav a {
     text-decoration: none;
-    color: white;
-    font-size: 18pt;
-    line-height: 18pt;
+    color:#4D4D43;;
+    font-size: 14pt;
+    line-height: 14pt;
     font-family: Arial, Helvetica, sans-serif;
+
+}
+.Nav a:hover {
+    color: #2098D1;
 }
 .imageHolder {
-    height: 70px;
+    margin-left: -2px;
+    height: 60px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -24,28 +39,78 @@
 .gdLogo {
     padding: 0px 2px;
     height: 30px;
-    filter: invert(100%);
-    background: white;
+    filter: invert(0%);
     border-radius: 50px;
     transition: .1s;
+    
 }
 .gdLogo:hover {
     filter: hue-rotate(180deg);
-    background: #DF672E;
+    filter: invert(100%);
+    background: #BC4F0E;
+    /* opposite of#43B0F1; */
 
 }
 .gdLogo:active {
     background: white;
-    filter: invert(100%);
-}
-.imageMask {
-    /* position: absolute; */
-    height: 42px; 
-    border-radius: 35px;
-    width: 100%;
-    background: rgb(0, 126, 252);
-}
-.imageMask:hover {
     
+}
+.rightNav img {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    opacity: .4;
+    cursor: pointer;
+}
+.rightNav img:hover {
+    opacity: 1;
+    background: #2098D1;
+}
+@media (max-width:959px){
     
+.logoNav {
+    width: 10%;
+    min-width: 70px;
+    
+}
+.centerNav {
+    width: 70%;
+    
+}
+.rightNav {
+    width: 20%;
+    min-width: 165px;
+}
+}
+
+/* changing direction of nav to vertical*/
+@media (min-width: 960px){
+    .NavHolder {
+        width: 60px;
+        height: 100vh;
+    }
+    .Nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100vh;
+    }
+    .navSection {
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    
+    .logoNav {
+        height: 10%;
+    }
+    .centerNav {
+        height: 60%;
+    }
+    .rightNav {
+        height: 30%; 
+}
+.imageHolder {
+    margin-left: 2px;
+    }
 }

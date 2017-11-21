@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Contact.css';
- 
+import Nav from '../Nav/Nav.js';
 class Contact extends Component{ 
     constructor(){
         super();
@@ -13,7 +13,11 @@ class Contact extends Component{
     render(){
         return (
             <div className='Contact'>
-                
+            <Nav/>    
+                hello there
+                how 
+                are you 
+                doing today?are
             </div>
         )
     }

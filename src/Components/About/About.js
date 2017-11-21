@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Projects.css';
+import './About.css';
 import Nav from '../Nav/Nav.js';
-class Projects extends Component{ 
+class About extends Component{ 
     constructor(){
         super();
  
@@ -12,10 +12,10 @@ class Projects extends Component{
  
     render(){
         return (
-            <div className='Projects'>
+            <div className='About'>
                 <Nav/>
             </div>
         )
     }
 }
-export default Projects;
+export default About;
