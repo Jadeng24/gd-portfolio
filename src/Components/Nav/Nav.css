@@ -25,8 +25,7 @@ align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 
 }
-.Nav a:hover {
-}
+
 .gdLogoHolder {
     margin-left: -2px;
     height: 60px;
@@ -47,6 +46,7 @@ align-items: center;
     filter: hue-rotate(180deg);
     filter: invert(100%);
     background: #BC4F0E;
+    
     /* opposite of#43B0F1; */
 
 }
@@ -63,8 +63,8 @@ align-items: center;
 }
 .imgLinkHolder {
     position: relative;
-    width: 40px;
-    height: 30px;
+    width: 70px;
+    height: 50px;
     border-radius: 2px;
     transition: .3s;
     text-align: center;
@@ -76,31 +76,38 @@ align-items: center;
     top: 0;
     visibility: hidden;
     opacity: 0;
-    transition: .3s;
-    margin-top: 5px;
+    transition: .5s;
     font-size: 6pt;
-    color: #2098D1;
+    
+    color: white;
+    margin-top: 50px;
 }
 .imgLinkHolder:hover .linkName {
     visibility: visible;
     opacity: 1;
-    transition: .3s;
+    transition: .5s;
+    margin-top: 20px;
+    font-size: 8pt;
+    color: #2098D1;
 }
 
 .imgLinkHolder img {
-    width: 40px;
-    height: 30px;
+    width: 70px;
+    height: 50px;
     border-radius: 4px;
-    transition: .9s;
-    
+    transition: .5s;
+}
+.imgLinkHolder:hover {
+    background: rgba(255, 255, 255, 0.05);
 }
 .imgLinkHolder:hover img {
-    opacity: 0;
-    transition: .2s;
+    opacity: .6;
+    transition: .5s;
     background: transparent;
     margin-top: 10px;
     width: 20px;
     height: 15px;
+    margin-top: -50px;
 }
 
 /* social media links */
@@ -124,19 +131,17 @@ align-items: center;
 .logoNav {
     width: 10%;
     min-width: 70px;
-    
 }
 .centerNav {
     width: 50%;
     height: 60px;
     justify-content: space-around;
-    
 }
 .rightNav {
     width: 20%;
     min-width: 165px;
     margin-right: 15px;
-}
+    }
 }
 
 /* changing direction of nav to vertical*/
@@ -163,6 +168,42 @@ align-items: center;
         height: 10%;
         min-height: 30px;
     }
+    
+    .linkName {
+        font-size: 8pt;
+        margin: 0;
+        margin-top: 0px;
+        margin-top: 20px;
+        margin-left: 20px;
+        transition: .5s;
+
+    }
+  
+    .imgLinkHolder:hover .linkName {
+        margin: 0;
+        margin-left: 2px;
+        margin-top: 20px;
+        font-size: 8pt;
+        transform: rotate(0deg);
+        
+    }
+    .imgLinkHolder img {
+        transform-origin: 0% 50%;
+        transition: 2s;
+        
+        width: 50px;
+        height: 40px;
+    }
+    .imgLinkHolder:hover img {
+        margin: 0;
+        width: 60px;
+        height: 40px;
+        transform: rotateY(90deg);
+        
+        transition: .3s;
+        /* opacity: 0; */
+    }
+
     .centerNav {
         justify-content: space-around;
         align-items: center;
@@ -177,4 +218,133 @@ align-items: center;
 .gdLogoHolder {
     margin-left: 2px;
     }
+}
+
+
+
+/* drop down menu BUTTON for mobile */
+.dropDownMenuBtn {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: none;
+}
+/* sections of menu burger menu */
+.bar {
+    width: 70%;
+    height: 6px;
+    background: white;
+    transition: .5s;
+    width: 80%;
+    border-radius: 2px;
+}
+.bar1 {
+    position: absolute;
+    top: 20%;
+    transition-delay: .1s;
+}
+.midBar1{
+    position: absolute;
+    top:calc(50% - 3px);
+}
+.midBar2{
+    position: absolute;
+    top:calc(50% - 3px);
+}
+.bar3 {
+    position: absolute;
+    bottom: 20%;
+    transition-delay: .1s;
+
+}
+/* animation section when clicked */
+.animateBar1 {
+    top:calc(50% - 3px);
+    opacity: 0;
+    transition-delay: 0s;
+}
+.animateMidBar1 {
+    transform: rotate(-45deg);
+    transition-delay: .3s;
+}
+.animateMidBar2 {
+    transform: rotate(45deg);
+    transition-delay: .3s;
+}
+.animateBar3 {
+    bottom:calc(50% - 3px);
+    transition-delay: 0s;
+    
+    opacity: 0;
+}
+/* end of menu button */
+
+/* actual drop down menu */
+.dropDownMenu  {
+position: absolute;
+right: 0;
+width: 50vw;
+height: 100vh;
+background: #181818;
+transition: .3s;
+transition-delay: .1s;
+
+
+}
+.displayMenu {
+    opacity: 1;
+    right: 0;
+}
+.hideMenu {
+    right: -50vw;
+}
+/* no social icons on nav with mobile  found in dropdownMenu*/
+@media (max-width:600px){
+    .centerNav {
+        display: none;
+    }
+    .rightNav {
+        display: none;
+    }
+    .dropDownMenuBtn {
+        display: flex;
+    }
+}
+.menuSectionHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 60px);
+}
+
+.menuPageLinksHolder {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+text-align: right;
+height: 200px;
+width: 80%;
+
+}
+.menuPageLinksHolder a {
+    text-decoration: none;
+}
+.menuPageLink {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+}
+
+.menuSocialLinksHolder {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menuSocialLinksHolder img {
+    width: 30px;
+    height: 30px;
 }
