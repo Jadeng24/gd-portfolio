@@ -66,11 +66,12 @@ class Nav extends Component {
                 </div>
                  
                 {/*===| DROP DOWN MENU |=================================*/}
+                <div className={this.state.toggleMenu ? 'dropDownMenuHolder' : 'dropDownMenuHolder hideHolder'}>
                 <div className={this.state.toggleMenu ? 'dropDownMenu displayMenu' : 'dropDownMenu hideMenu'}>
                     {/* menuSectionHolder*/}
                     <div className='menuSectionHolder'>
                         {/* section page links  */}
-                        <div className='menuPageLinksHolder'>
+                        <div className={this.state.toggleMenu ? 'menuPageLinksHolder showLinks' : 'menuPageLinksHolder hideLinks'}>
                             <Link to={'/about'}><p className='menuPageLink'>ABOUT</p></Link>
                             <Link to={'/projects'}><p className='menuPageLink'>PROJECTS</p></Link>
                             <Link to={'/skills'}><p className='menuPageLink'>SKILLS</p></Link>
@@ -78,7 +79,7 @@ class Nav extends Component {
                         </div>
 
                         {/* section - social links */}
-                        <div className='menuSocialLinksHolder'>
+                            <div className={this.state.toggleMenu ? 'menuSocialLinksHolder showSocialLinks' : 'menuSocialLinksHolder hideSocialLinks'}>
                             <img src={fbLogo} alt='logo' />
                             <img src={LinLogo} alt='logo' />
                             <img src={twiLogo} alt='logo' />
@@ -87,7 +88,8 @@ class Nav extends Component {
 
                     </div>{/* end of menuSectionHolder */}
 
-                </div>
+                    </div>
+                </div>    
 
             </div>
         )

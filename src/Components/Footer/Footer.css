@@ -1,0 +1,81 @@
+@font-face {
+    font-family: MontsRegular;
+    src: url('../Fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: LeagueSpartan;
+    src: url('../Fonts/LeagueSpartan-Bold.otf');
+}
+.footerHolder {
+   
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: .5s;
+    transition-delay: .15s;
+}
+.displayFooter {
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+}
+.hideFooter {
+    position: fixed;
+    bottom: -150px;
+    right: 0;
+}
+.footerBtn {
+    width: 50px;
+    height: 50px;
+    background: #101b3b;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+.fBtnHolder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.fBtnBar1 {
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 0;
+    width: 60%;
+    height: 4px;
+    background: white;
+}
+.pointDown {
+transition: .5s;
+transform: rotate(45deg);
+}
+.pointUp {
+    transition: .5s;
+transform: rotate(-45deg);
+}
+.fBtnBar2 {
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 0;
+    width: 60%;
+    height: 4px;
+    background: white
+}
+.Footer {
+    width: 100vw;
+    height: calc(100% - 50px);
+    padding-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: linear-gradient(90deg,#235aa6,#101b3b);
+}
+.footerItem {
+    font-family: MontsRegular,sans-serif;
+    padding: 10px 30px;
+    color: white;
+    opacity: .5;
+    font-size: 14pt;
+    }
