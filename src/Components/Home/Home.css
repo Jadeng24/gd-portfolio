@@ -23,18 +23,10 @@ overflow-x: hidden;
         width: 100vw;
         height: 100vh;
     }
-    .Home{
-        margin-left: 60px;
-    }
 }
 
 
-/* tablet and mobile */
-@media (max-width:959px){
-    .homeTop {
-        height: 100vh;
-    }
-}
+
 .homeTop {
     display: flex;
     justify-content: center;
@@ -44,7 +36,7 @@ overflow-x: hidden;
     background-repeat: no-repeat;
     background-position: top right;
     flex-direction: column;
-   
+    flex-wrap: wrap;
     
 }
 
@@ -52,11 +44,13 @@ overflow-x: hidden;
     font-family: LeagueSpartan,sans-serif;
     color: white;
     font-size: 50pt;
+    width: 80%;
 }
 .title2 {
     font-family: MontsRegular,sans-serif;
     color: white;
     font-size: 50pt;
+    width: 80%;
 }
 
 .homeMid {
@@ -82,4 +76,27 @@ overflow-x: hidden;
     font-size: 50pt;
     font-family:Monts-Regular, Helvetica, sans-serif;
     color: white;
+}
+/* tablet and mobile */
+@media (max-width:959px){
+    .homeTop {
+        height: 100vh;
+    }
+    .title1 {
+        font-size: 30pt;
+    }
+     .title2 {
+        font-size: 30pt;
+    }
+}
+@media (max-width:600px){
+    .homeTop {
+        height: 100vh;
+    }
+    .title1 {
+        font-size: 24pt;
+    }
+    .title2 {
+        font-size: 24pt;
+    }
 }

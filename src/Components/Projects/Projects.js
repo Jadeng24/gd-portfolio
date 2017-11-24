@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
 import './Projects.css';
 import Nav from '../Nav/Nav.js';
-class Projects extends Component{ 
-    constructor(){
+import Footer from '../Footer/Footer.js';
+class Projects extends Component {
+    constructor() {
         super();
- 
+
         this.state = {
-            
+
         }
     }
- 
-    render(){
+
+    render() {
         return (
-            <div className='Projects'>
-                <Nav/>
+            <div className='ProjectsHolder'>
+                <Nav />
+                <div className='Projects mainContent'>
+                    <div className='mainContentTitle'><h1>Projects and Work</h1></div>
+                    <div className='mainContentP'>
+                        <p>content placed here . . . . . . . . . . . .</p>
+                    </div>
+                </div>
+                <Footer/>
             </div>
         )
     }

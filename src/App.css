@@ -44,8 +44,85 @@ table {
 } */
 
 colors {
+  /* matte black */
   color: #181818;
+  /* grey */
   color: #4D4D43;
-  color: #2098D1;
+  /* blue */
+  color: #235aa6;
+  /* dark blue */
+  color: #101b3b; 
+  
   color: #DF672E;
+}
+
+@font-face {
+    font-family: MontsRegular;
+    src: url('/src/Components/Fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: LeagueSpartan;
+    src: url('/src/Components/Fonts/LeagueSpartan-Bold.otf');
+}
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  background: rgb(26, 27, 28);
+  background: rgb(198, 201, 205);
+    height: 100vh;
+    width: 100vw;
+    
+}
+.mainContentTitle {
+  font-family: LeagueSpartan,Arial, Helvetica, sans-serif;
+  color: #235aa6;
+  padding-left: 10%;
+  
+}
+.mainContentP {
+  color: #181818;
+  font-family: MontsRegular,Arial, Helvetica, sans-serif;
+  padding-left: 10%;
+}
+/* desktop view */
+@media (min-width:960px){
+  .mainContent {
+    padding-left: 60px;
+  }
+  .mainContentTitle {
+    font-size: 42pt;
+    margin-top: 120px;
+    margin-bottom: 40px;
+  }
+  .mainContentP {
+    width: 70%;
+    font-size: 16pt;
+  }
+}
+/* mobile / tablet view */
+@media (max-width:960px){
+  .mainContent {
+    padding-top: 60px;
+  }
+  .mainContentTitle {
+    font-size: 32pt;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  .mainContentP {
+    width: 80%;
+    font-size: 14pt;
+  }
+}
+
+/* mobile / tablet view */
+@media (max-width:600px){
+  .mainContentTitle {
+    font-size: 24pt;
+    
+  }
+  .mainContentP {
+    width: 80%;
+    font-size: 12pt;
+  }
 }

@@ -16,13 +16,12 @@ class Home extends Component {
         return (
              
             // home holder            
-            <div className='homeHolder'>
-                <div className='leftNav'>    
+            <div className='homeHolder'>   
                 <Nav />
-                 </div>
+                 
                 {/*===| Home |=================================*/}
                 
-                <div className='Home'>
+                <div className='Home mainContent'>
                     {/* top section */}
                     <div className='homeTop'>
                         <h1 className='title1'>Hi, i'm Jaden</h1>
