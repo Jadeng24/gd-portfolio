@@ -361,6 +361,9 @@ transition-delay: .3s;
     .dropDownMenu {
         display: none;
     }
+    .dropDownMenuHolder {
+        display: none;
+    }
 }
 /* no social icons on nav with mobile  found in dropdownMenu*/
 @media (max-width:600px){

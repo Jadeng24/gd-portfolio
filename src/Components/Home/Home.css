@@ -55,12 +55,54 @@ overflow-x: hidden;
 
 .homeMid {
     background: white;
-    height: 500px;
+    min-height: 400px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
+.homeMidTitleHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.homeMidTitle {
+    font-size: 30pt;
+    font-family: LeagueSpartan,Arial, Helvetica, sans-serif;
 
+}
+.homeMidSubTitle {
+    font-size: 20pt;
+    font-family: MontsRegular,Arial, Helvetica, sans-serif;
+}
+@media (min-width:960px){
+    .homeMid {
+        width: calc(100vw - 60px);
+        /* background:rgb(200, 197, 197); */
+    }
+    .homeMidSection {
+        /* border-right: solid 1px black; */
+        padding: 20px 10px;
+        height: 200px;
+    }
+    
+}
+
+.homeMid3Section {
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 80%;
+    }
+.homeMidSection {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 .homeBottom {
     display: flex;
     justify-content: center;
@@ -87,6 +129,13 @@ overflow-x: hidden;
     }
      .title2 {
         font-size: 30pt;
+    }
+    
+    .homeMid3Section  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
     }
 }
 @media (max-width:600px){

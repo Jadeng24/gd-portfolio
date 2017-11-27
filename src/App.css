@@ -67,10 +67,14 @@ colors {
 .mainContent {
   display: flex;
   flex-direction: column;
-  background: rgb(26, 27, 28);
-  background: rgb(198, 201, 205);
-    height: 100vh;
+  
+    background: rgb(26, 27, 28);
+    background: rgb(198, 201, 205);
+    min-height: 100vh;
     width: 100vw;
+    background-image: url('./Components/Assets/polygonWhite.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 .mainContentTitle {
@@ -83,11 +87,13 @@ colors {
   color: #181818;
   font-family: MontsRegular,Arial, Helvetica, sans-serif;
   padding-left: 10%;
+  
 }
 /* desktop view */
 @media (min-width:960px){
   .mainContent {
     padding-left: 60px;
+    
   }
   .mainContentTitle {
     font-size: 42pt;

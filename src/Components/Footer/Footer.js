@@ -45,7 +45,7 @@ class Footer extends Component {
                         </div>
                     </div>
 
-                    <div className='Footer' onClick={this.toggleFooterFunc}>
+                    <div className='Footer'>
                         <h3 className='footerItem'>Developed by: Jaden Goodwin </h3>
                         <h3 className='footerItem'>Goodwin Development Inc.</h3>
                     </div>

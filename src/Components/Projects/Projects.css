@@ -1,0 +1,80 @@
+
+@font-face {
+    font-family: MontsRegular;
+    src: url('/src/Components/Fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: LeagueSpartan;
+    src: url('/src/Components/Fonts/LeagueSpartan-Bold.otf');
+}
+.projectHolder {
+    margin-bottom: 100px;
+    width: calc(100vw - 60px);
+    height: 300px;
+    background: rgba(255, 255, 255, .6);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+}
+@media (max-width:960px) {
+    .projectHolder {
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 700px) {
+    .projectHolder {
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 25px;
+    }
+    .projectHolder {
+        height: 400px;
+        justify-content: center;
+    }
+    
+}
+.macbookHolder {
+    width: 300px;
+    min-width: 300px;
+    min-height: 200px;
+    position: relative;
+    background-image: url('../Assets/macbook.png');
+    background-repeat: no-repeat;
+    background-size: 300px;
+    
+}
+
+.projectImg {
+    top: 11px;
+    height: 141px;
+    width: 226px;
+    position: absolute;
+    left: 38px;
+}
+
+.projectInfoHolder {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   width: 50%;
+   min-width: 300px;
+   height: 200px;
+   
+   
+   
+   
+}
+.projectTitle {
+    font-size: 24pt;
+    font-family: LeagueSpartan,Arial, Helvetica, sans-serif;
+    margin-bottom: 16px;
+    color: #181818;
+}
+.projectDesc {
+    font-size: 14pt;
+    font-family: MontsRegular,Arial, Helvetica, sans-serif;
+    color: #2360a6;
+}

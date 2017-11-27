@@ -19,8 +19,9 @@ class Contact extends Component {
                     <div className='mainContentTitle'><h1>Contact Me</h1></div>
                     <div className='mainContentP'>
                         <p>content placed here . . . . . . . . . . . .</p>
+                        
                     </div>
-
+                    
                 </div>
                 <Footer />
             </div>

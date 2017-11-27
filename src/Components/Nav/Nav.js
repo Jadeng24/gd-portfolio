@@ -50,10 +50,10 @@ class Nav extends Component {
 
 
                     <div className='navSection rightNav'>
-                        <img src={fbLogo} alt='logo' />
-                        <img src={LinLogo} alt='logo' />
-                        <img src={twiLogo} alt='logo' />
-                        <img src={insLogo} alt='logo' />
+                        <a href='https://www.facebook.com/jadengoodwin24' target='_blank'><img src={fbLogo} alt='logo' /></a>
+                        <a href='https://www.linkedin.com/in/jaden-goodwin-7475bb13a/' target='_blank'><img src={LinLogo} alt='logo' /></a>
+                        <a href='https://twitter.com/Goodwin_Dev' target='_blank'><img src={twiLogo} alt='logo' /></a>
+                        <a href='https://www.instagram.com/jaden_g24/' target='_blank'><img src={insLogo} alt='logo' /></a>
                     </div>
                     {/* drop down menu button */}
                     <div className='dropDownMenuBtn' onClick={this.toggleMenuFunc}>
@@ -64,32 +64,32 @@ class Nav extends Component {
 
                     </div>
                 </div>
-                 
+
                 {/*===| DROP DOWN MENU |=================================*/}
                 <div className={this.state.toggleMenu ? 'dropDownMenuHolder' : 'dropDownMenuHolder hideHolder'}>
-                <div className={this.state.toggleMenu ? 'dropDownMenu displayMenu' : 'dropDownMenu hideMenu'}>
-                    {/* menuSectionHolder*/}
-                    <div className='menuSectionHolder'>
-                        {/* section page links  */}
-                        <div className={this.state.toggleMenu ? 'menuPageLinksHolder showLinks' : 'menuPageLinksHolder hideLinks'}>
-                            <Link to={'/about'}><p className='menuPageLink'>ABOUT</p></Link>
-                            <Link to={'/projects'}><p className='menuPageLink'>PROJECTS</p></Link>
-                            <Link to={'/skills'}><p className='menuPageLink'>SKILLS</p></Link>
-                            <Link to={'/contact'}><p className='menuPageLink'>CONTACT</p></Link>
-                        </div>
+                    <div className={this.state.toggleMenu ? 'dropDownMenu displayMenu' : 'dropDownMenu hideMenu'}>
+                        {/* menuSectionHolder*/}
+                        <div className='menuSectionHolder'>
+                            {/* section page links  */}
+                            <div className={this.state.toggleMenu ? 'menuPageLinksHolder showLinks' : 'menuPageLinksHolder hideLinks'}>
+                                <Link to={'/about'}><p className='menuPageLink'>ABOUT</p></Link>
+                                <Link to={'/projects'}><p className='menuPageLink'>PROJECTS</p></Link>
+                                <Link to={'/skills'}><p className='menuPageLink'>SKILLS</p></Link>
+                                <Link to={'/contact'}><p className='menuPageLink'>CONTACT</p></Link>
+                            </div>
 
-                        {/* section - social links */}
+                            {/* section - social links */}
                             <div className={this.state.toggleMenu ? 'menuSocialLinksHolder showSocialLinks' : 'menuSocialLinksHolder hideSocialLinks'}>
-                            <img src={fbLogo} alt='logo' />
-                            <img src={LinLogo} alt='logo' />
-                            <img src={twiLogo} alt='logo' />
-                            <img src={insLogo} alt='logo' />
-                        </div>
+                                <a href='https://www.facebook.com/jadengoodwin24' target='_blank'><img src={fbLogo} alt='logo' /></a>
+                                <a href='https://www.linkedin.com/in/jaden-goodwin-7475bb13a/' target='_blank'><img src={LinLogo} alt='logo' /></a>
+                                <a href='https://twitter.com/Goodwin_Dev' target='_blank'><img src={twiLogo} alt='logo' /></a>
+                                <a href='https://www.instagram.com/jaden_g24/' target='_blank'><img src={insLogo} alt='logo' /></a>
+                            </div>
 
-                    </div>{/* end of menuSectionHolder */}
+                        </div>{/* end of menuSectionHolder */}
 
                     </div>
-                </div>    
+                </div>
 
             </div>
         )
