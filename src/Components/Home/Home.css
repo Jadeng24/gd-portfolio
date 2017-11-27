@@ -79,14 +79,13 @@ overflow-x: hidden;
 @media (min-width:960px){
     .homeMid {
         width: calc(100vw - 60px);
-        /* background:rgb(200, 197, 197); */
+
     }
     .homeMidSection {
-        /* border-right: solid 1px black; */
+        
         padding: 20px 10px;
         height: 200px;
     }
-    
 }
 
 .homeMid3Section {
@@ -97,7 +96,6 @@ overflow-x: hidden;
         width: 80%;
     }
 .homeMidSection {
-        
         display: flex;
         flex-direction: column;
         align-items: center;
