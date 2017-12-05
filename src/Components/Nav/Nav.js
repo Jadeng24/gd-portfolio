@@ -12,7 +12,7 @@ import SkillsIcon from '../Assets/skillWhite.png';
 // social icons 
 import fbLogo from '../Assets/facebookWhite.png';
 import LinLogo from '../Assets/linkedInWhite.png';
-import pinLogo from '../Assets/pinterestWhite.png';
+// import pinLogo from '../Assets/pinterestWhite.png';
 import insLogo from '../Assets/instagramWhite.png';
 import twiLogo from '../Assets/twitterWhite.png';
 class Nav extends Component {

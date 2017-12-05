@@ -7,7 +7,6 @@
     src: url('../Fonts/LeagueSpartan-Bold.otf');
 }
 .footerHolder {
-   
     height: 200px;
     width: 100vw;
     display: flex;
@@ -23,6 +22,7 @@ transition-delay: .3s;
     position: fixed;
     bottom: 0px;
     right: 0;
+    z-index: 5;
 }
 .hideFooter {
     position: fixed;
@@ -91,6 +91,7 @@ transition-delay: .7s;
     
 }
 .Footer {
+    
     width: 100vw;
     height: calc(100% - 50px);
     padding-left: 80px;
@@ -126,6 +127,7 @@ transition-delay: .7s;
         flex-direction: column;
         transition-delay: .15s;
     transition: .4s;
+    
 
     }
 
@@ -134,6 +136,7 @@ transition-delay: .7s;
         position: fixed;
     bottom: 0px;
     right: 0;
+    z-index: 4;
     }
 
     /* Hide Shadow of footer */
@@ -177,4 +180,5 @@ transition-delay: .7s;
         background: linear-gradient(180deg, #181818 20%,#1818187c );
         height: calc(100% - 50px);
         width: 100vw;
+        
     }
