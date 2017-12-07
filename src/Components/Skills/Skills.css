@@ -7,6 +7,10 @@
     font-family: LeagueSpartan;
     src: url('/src/Components/Fonts/LeagueSpartan-Bold.otf');
 }
+/* .skills > .mainContent{
+    
+} */
+       
 
 .figureHolder {
     width: 200px;
@@ -34,9 +38,22 @@
 }
 
 @keyframes spin {
-    from { -webkit-transform: rotateX(0deg)rotateY(0deg);
+    0% { -webkit-transform: rotateX(0deg)rotateY(0deg);
     }
-    to {-webkit-transform: rotateY(360deg)rotateX(360deg);
+    20% {
+        -webkit-transform: rotateY(90deg);
+
+    }
+    50% { -webkit-transform: rotateX(90deg)
+
+    }
+    70% {-webkit-transform: rotateY(180deg)
+        
+    }
+    80% {-webkit-transform: rotateX(180deg)
+        
+    }
+    100% {-webkit-transform: rotateX(0deg) rotateY(0deg);
    }
 }
 #cube figure {

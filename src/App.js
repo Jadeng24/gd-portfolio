@@ -7,8 +7,8 @@ import About from './Components/About/About.js';
 import Projects from './Components/Projects/Projects.js';
 import Skills from './Components/Skills/Skills.js';
 import Contact from './Components/Contact/Contact.js';
-
-
+import Loading from './Components/Loading/Loading.js';
+import Thankyou from './Components/Thanksyou/Thankyou.js';
 
 class App extends Component {
   render() {
@@ -30,6 +30,8 @@ class App extends Component {
             <Route component={Projects} path='/projects'/>
             <Route component={Skills} path='/skills'/>
             <Route component={Contact} path='/contact'/>
+            <Route component={Loading} path='/loading'/>
+            <Route component={Thankyou} path='/messagesent'/>
           </Switch>
           </Router>
         </div>  

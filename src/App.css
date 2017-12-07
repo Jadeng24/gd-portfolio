@@ -64,10 +64,11 @@ colors {
     font-family: LeagueSpartan;
     src: url('/src/Components/Fonts/LeagueSpartan-Bold.otf');
 }
+/* main content and animation */
 .mainContent {
   display: flex;
   flex-direction: column;
-  
+    /* margin-left: -80vw; */
     background: rgb(26, 27, 28);
     background: rgb(198, 201, 205);
     min-height: 100vh;
@@ -75,7 +76,69 @@ colors {
     background-image: url('./Components/Assets/polygonWhite.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    
+
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  animation-delay: .3s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  transition-delay: .5s;
+
+  }
+
+ @-webkit-keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+}
+
+/* main content shadow animation */
+.mainContentShadow {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(270deg, #181818 10%,#1818187c );
+  background: linear-gradient(270deg,#235aa6,#101b3b);
+  -webkit-animation-name: slideInLeftShadow;
+  animation-name: slideInLeftShadow;
+  -webkit-animation-duration: .7s;
+  animation-duration: .7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  transition-delay: .3s;
+  transition: .3s;
+}
+@-webkit-keyframes slideInLeftShadow {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
 }
 .mainContentTitle {
   font-family: LeagueSpartan,Arial, Helvetica, sans-serif;
@@ -90,6 +153,33 @@ colors {
   padding-left: 10%;
   z-index: 2;
   margin-bottom: 50px;
+  
+}
+.mainContentP p a {
+  text-decoration: none;
+  color: #235aa6;
+}
+.mainContentP p a:hover {
+  text-decoration: none;
+  color: grey;
+}
+.mainContentP p a:active {
+  text-decoration: none;
+  color:#235aa6;
+}
+.mainContentP h3 {
+  font-size: 20pt;
+  font-family: LeagueSpartan,Arial, Helvetica, sans-serif;
+}
+.mainContentP h4 {
+  font-size: 14pt;
+  font-family: MontsRegular,Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  color: white;
+}
+.mainContent span {
+  font-weight: bold;
+  font-family: MontsRegular,Arial, Helvetica, sans-serif;
   
 }
 /* desktop view */

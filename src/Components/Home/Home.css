@@ -25,8 +25,6 @@ overflow-x: hidden;
     }
 }
 
-
-
 .homeTop {
     display: flex;
     justify-content: center;
@@ -39,42 +37,87 @@ overflow-x: hidden;
     flex-wrap: wrap;
     
 }
+.homeTop a {
+    text-decoration: none;
+    color: white;
+    
+}
+.homeTop span.char {
+    font-family: LeagueSpartan,sans-serif;
+    font-size: 50pt;
+
+}
+.homeTop span:hover {
+    color: #2360a6;
+    transition: .2s;
+    background: white;
+    
+}
 
 .title1 {
     font-family: LeagueSpartan,sans-serif;
-    color: white;
+    
     font-size: 50pt;
-    width: 80%;
+    width: 90%;
 }
 .title2 {
     font-family: MontsRegular,sans-serif;
-    color: white;
     font-size: 50pt;
     width: 80%;
 }
 
 .homeMid {
     background: white;
-    min-height: 400px;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 20px;
 }
+
 .homeMidTitleHolder {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background: #eee;
+    padding-bottom: 20px;
 }
 .homeMidTitle {
+    margin-top: 40px;
     font-size: 30pt;
     font-family: LeagueSpartan,Arial, Helvetica, sans-serif;
 
 }
 .homeMidSubTitle {
     font-size: 20pt;
+    padding: 10px 20px;
+    text-align: center;
     font-family: MontsRegular,Arial, Helvetica, sans-serif;
+}
+.homeMid3Section {
+    padding: 40px 0px;
+}
+.homeMidSection h2 {
+    color: #2360a6;
+    font-weight: bold;
+    font-size: 18pt;
+}
+.homeMidSection {
+    font-size: 14pt;
+    font-family: MontsRegular,Arial, Helvetica, sans-serif;
+}
+.homeMid a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.274);
+    font-family: LeagueSpartan,Arial, Helvetica, sans-serif;
+    padding: 10px 0px;
+    font-size: 20pt;
+
+}
+.homeMid a:hover {
+    color: #2360a6;
 }
 @media (min-width:960px){
     .homeMid {
@@ -93,13 +136,15 @@ overflow-x: hidden;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        width: 80%;
+        width: 100%;
+        
     }
 .homeMidSection {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 10px 40px;
     }
 .homeBottom {
     display: flex;
