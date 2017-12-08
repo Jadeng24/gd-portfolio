@@ -10,9 +10,19 @@ class Home extends Component {
         this.state = {
 
         }
-    }
+        this.scrollDown = this.scrollDown.bind(this);
+        this.myWaitTime = this.myWaitTime.bind(this);
 
+    }
+    scrollDown() {
+        setTimeout(this.myWaitTime, 300);
+    }
+    myWaitTime() {
+       
+        window.scrollTo(0,400);
+}    
     render() {
+        
         return (
 
             // home holder            
@@ -26,6 +36,7 @@ class Home extends Component {
                         {/*===| Top section of home |=================================*/}
 
                         <div className='homeTop'>
+                        <div className='callToActionBtn'>CONTACT ME</div>    
                             <Link to='/about'><h1 className='title1'>
                                 <span className='char'>H</span>
                                 <span className='char'>i</span>
@@ -64,16 +75,20 @@ class Home extends Component {
                                     <span >p</span>
                                     <span >e</span>
                                     <span >r</span>
-                                    </h2></Link>
+                                </h2></Link>
+                            <a href="#expertise"><i className="fa fa-chevron-down" aria-hidden="false" id="expertise"></i></a>
                         </div>
-
+                         
+                            {/* onClick={this.scrollDown}    */}
 
                         {/*===| Mid section of home |=================================*/}
 
-                        <div className='homeMid'>
-                            <div className='homeMidTitleHolder'>
+                        <div className='homeMid' >
+                            <div className='homeMidTitleHolder' >
+                                   
                                 <h2 className='homeMidTitle'>My Expertise</h2>
                                 <h4 className='homeMidSubTitle'>I've got skills in all phases of the development process</h4>
+                                <Link to='/projects' className='viewWorkBtn'><span>View my work</span><i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
                             </div>
 
                             <div className='homeMid3Section'>
@@ -93,13 +108,20 @@ class Home extends Component {
                                 </div>
 
                             </div>
-                            <Link to='/projects'><h3>View my work</h3></Link>
+                            
                         </div>
 
-                        <div className='homeBottom'>
-                            <h1></h1>
+                        <div className='homeMid midSec2'>
+                            <h1>Hello</h1>
+                        </div>
+                        
+                        <div className='homeMid midSec3'>
+                            <h1>Hello</h1>
                         </div>
 
+                        <div className='homeMid midSec4'>
+                            <h1>Hello</h1>
+                        </div>
 
 
                     </div>

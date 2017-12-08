@@ -21,13 +21,14 @@ overflow-x: hidden;
     }
     .homeTop {
         width: 100vw;
+        margin-left: -60px;
         height: 100vh;
     }
 }
 
 .homeTop {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../Assets/workspace4.jpg');
     background-size: cover;
@@ -35,11 +36,48 @@ overflow-x: hidden;
     background-position: top right;
     flex-direction: column;
     flex-wrap: wrap;
-    
+    padding-top: 30vh;
+    position: relative;
 }
+.callToActionBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40vh;
+    color: white;
+    padding: 10px 20px;
+    background: #2360a6;
+    border-radius: 5px;
+    font-size: 10pt;
+    line-height: 10pt;
+    font-family: MontsRegular,sans-serif;
+    cursor: pointer;
+    transition: .3s;
+}
+.callToActionBtn:hover {
+    margin-top: -2px;
+    font-size: 12pt;
+    padding: 12px 24px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.445);
+    background: #2360a6;
+    background: linear-gradient(45deg,#235aa6 20%,#478ddd);
+}
+.fa-chevron-down {
+    color: white;
+    position: absolute;
+    left: 49vw;
+    bottom: 120px;
+    cursor: pointer;
+    font-size: 30pt;
+    cursor: pointer;
+   
+}
+
 .homeTop a {
     text-decoration: none;
     color: white;
+    text-align: left;
     
 }
 .homeTop span.char {
@@ -51,18 +89,17 @@ overflow-x: hidden;
     color: #2360a6;
     transition: .2s;
     background: white;
-    
 }
 
-.title1 {
+.title1 span.char{
     font-family: LeagueSpartan,sans-serif;
     
     font-size: 50pt;
     width: 90%;
 }
-.title2 {
+.title2 span{
     font-family: MontsRegular,sans-serif;
-    font-size: 50pt;
+    font-size: 40pt;
     width: 80%;
 }
 
@@ -96,9 +133,6 @@ overflow-x: hidden;
     text-align: center;
     font-family: MontsRegular,Arial, Helvetica, sans-serif;
 }
-.homeMid3Section {
-    padding: 40px 0px;
-}
 .homeMidSection h2 {
     color: #2360a6;
     font-weight: bold;
@@ -107,16 +141,37 @@ overflow-x: hidden;
 .homeMidSection {
     font-size: 14pt;
     font-family: MontsRegular,Arial, Helvetica, sans-serif;
+    
 }
-.homeMid a {
+.viewWorkBtn {
     text-decoration: none;
+    margin: 0;
     color: rgba(0, 0, 0, 0.274);
-    font-family: LeagueSpartan,Arial, Helvetica, sans-serif;
+    font-family: MontsRegular,Arial, Helvetica, sans-serif;
     padding: 10px 0px;
     font-size: 20pt;
-
+    padding: 0;
 }
-.homeMid a:hover {
+.viewWorkBtn {
+    width: 240px;
+    min-width: 200px;
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.viewWorkBtn span {
+    color: #2360a6;
+}
+.viewWorkBtn span:hover {
+    text-decoration: line-through;
+}
+.fa-long-arrow-right {
+    transition: .3s;
+    margin-left: 5px;
+}
+.viewWorkBtn:hover .fa-long-arrow-right{
+    margin-left: 20px;
     color: #2360a6;
 }
 @media (min-width:960px){
@@ -124,11 +179,7 @@ overflow-x: hidden;
         width: calc(100vw - 60px);
 
     }
-    .homeMidSection {
-        
-        padding: 20px 10px;
-        height: 200px;
-    }
+    
 }
 
 .homeMid3Section {
@@ -137,7 +188,7 @@ overflow-x: hidden;
         justify-content: space-between;
         align-items: flex-start;
         width: 100%;
-        
+        padding: 40px 0px;
     }
 .homeMidSection {
         display: flex;
@@ -146,31 +197,49 @@ overflow-x: hidden;
         text-align: center;
         padding: 10px 40px;
     }
-.homeBottom {
+.homeMidSection {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url('../Assets/workspace.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:500px;
-    background-position: bottom right;
     text-align: center;
 }
-.homeBottom h1 {
+.homeMid h1 {
     font-size: 50pt;
     font-family:Monts-Regular, Helvetica, sans-serif;
-    color: white;
 }
+.homeMid h3 {
+    color: white;
+    font-size: 30pt;
+}
+.midSec2 {
+    background: #2360a6;
+    color: white;
+    min-height: 100vh;
+    justify-content: flex-start;
+}   
+.midSec3 {
+    
+}
+.midSec4 {
+    background: #2360a6;
+    min-height: 100vh;
+    color: white;
+    justify-content: flex-start;
+    background: #101b3b;
+    
+}
+
 /* tablet and mobile */
 @media (max-width:959px){
     .homeTop {
+        justify-content: flex-start;
         height: 100vh;
+        padding-top: 20vh;
     }
-    .title1 {
+    .title1 span.char{
         font-size: 30pt;
     }
-     .title2 {
+     .title2 span{
         font-size: 30pt;
     }
     
@@ -185,10 +254,17 @@ overflow-x: hidden;
     .homeTop {
         height: 100vh;
     }
-    .title1 {
+    .homeTop a {
+        text-align: center;
+    }
+    .title1 span.char{
         font-size: 24pt;
     }
-    .title2 {
+    .title2 span{
         font-size: 24pt;
+    }
+    .homeMid {
+        justify-content: center;
     }
 }
+

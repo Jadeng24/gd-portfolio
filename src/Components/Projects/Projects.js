@@ -5,7 +5,6 @@ import Footer from '../Footer/Footer.js';
 import Macbook from '../Assets/macbook.png';
 import WipApp from '../Assets/WipLanding.png';
 import AdventureApp from '../Assets/landing.png';
-import swal from 'sweetalert';
 class Projects extends Component {
     constructor() {
         super();
