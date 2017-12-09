@@ -11,7 +11,7 @@ const express = require('express'),
 const app = express();
 
 app.use(cors());
-
+app.use(express.static(`${__dirname}/../build`));
 app.use(bodyParser.json());
 app.use(session({
     secret: process.env.SECRET,
