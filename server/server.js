@@ -24,5 +24,13 @@ app.use(session({
 //---Send message through nodemailer---/
 app.post('/api/send_email', mail_controller.sendEmail) // set up the end point
 
+
+// for setting up online
+const path = require('path')
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+})
+
+
 const PORT = 3005;
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
