@@ -36,7 +36,7 @@ class Home extends Component {
                         {/*===| Top section of home |=================================*/}
 
                         <div className='homeTop'>
-                        <div className='callToActionBtn'>CONTACT ME</div>    
+                          
                             <Link to='/about'><h1 className='title1'>
                                 <span className='char'>H</span>
                                 <span className='char'>i</span>
@@ -76,7 +76,10 @@ class Home extends Component {
                                     <span >e</span>
                                     <span >r</span>
                                 </h2></Link>
-                            <a href="#expertise"><i className="fa fa-chevron-down" aria-hidden="false" id="expertise"></i></a>
+                            <div className='homeTopBtnsHolder'>
+                            <Link to='/contact'><div className='callToActionBtn'>CONTACT ME</div></Link>
+                                <a href="#expertise"><i className="fa fa-chevron-down" aria-hidden="false" id="expertise"></i></a>
+                            </div>    
                         </div>
                          
                             {/* onClick={this.scrollDown}    */}

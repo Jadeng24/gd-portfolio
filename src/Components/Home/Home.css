@@ -28,46 +28,60 @@ overflow-x: hidden;
 
 .homeTop {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../Assets/workspace4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top right;
     flex-direction: column;
-    flex-wrap: wrap;
     padding-top: 30vh;
     position: relative;
+    
+    justify-content: space-between;
+    
+}
+.homeTopBtnsHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    min-height: 80px;
+    width: 100vw;
+    margin-bottom: 50px;
+
 }
 .callToActionBtn {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 40vh;
+    /* align-self: flex-end; */
+    /* top: 0; */
     color: white;
     padding: 10px 20px;
     background: #2360a6;
+    background: linear-gradient(45deg,#235aa6 20%,#478ddd);
     border-radius: 5px;
     font-size: 10pt;
     line-height: 10pt;
     font-family: MontsRegular,sans-serif;
     cursor: pointer;
     transition: .3s;
+    margin-bottom: 20px;
 }
 .callToActionBtn:hover {
-    margin-top: -2px;
     font-size: 12pt;
-    padding: 12px 24px;
+    padding: 12px 22px;
+    margin-top: -4px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.445);
-    background: #2360a6;
     background: linear-gradient(45deg,#235aa6 20%,#478ddd);
 }
 .fa-chevron-down {
     color: white;
-    position: absolute;
-    left: 49vw;
-    bottom: 120px;
+    /* position: absolute;
+    left: 48vw;
+    bottom: 120px; */
     cursor: pointer;
     font-size: 30pt;
     cursor: pointer;
@@ -232,8 +246,7 @@ overflow-x: hidden;
 /* tablet and mobile */
 @media (max-width:959px){
     .homeTop {
-        justify-content: flex-start;
-        height: 100vh;
+        height: calc(100vh - 60px);
         padding-top: 20vh;
     }
     .title1 span.char{
@@ -251,9 +264,6 @@ overflow-x: hidden;
     }
 }
 @media (max-width:600px){
-    .homeTop {
-        height: 100vh;
-    }
     .homeTop a {
         text-align: center;
     }
