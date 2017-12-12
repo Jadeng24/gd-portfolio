@@ -15,7 +15,7 @@ class Loading extends Component {
     }
 
     myWaitTime() {
-        window.location.assign('http://localhost:3000/messagesent')
+        window.location.assign('/messagesent')
     }
     render() {
         return (

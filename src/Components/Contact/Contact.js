@@ -34,7 +34,7 @@ class Contact extends Component {
 
             axios.post('/api/send_email', this.state) // I put all the information from the input fields on state. I am sending it all so I can use it off the req.body when sending the email in the controller.
             // this.resetState();
-            setTimeout(window.location.assign('http://localhost:3000/loading'), 1000);
+            setTimeout(window.location.assign('/loading'), 1000);
         }
 
         else {
