@@ -34,7 +34,7 @@ class Projects extends Component {
                         {/*===| Adventure App Project |=================================*/}
                         <div className='projectHolder'>
                             <div className='macbookHolder'>
-                                <a href='http://goodwindevelopmentinc.com:3002/#/' target='_blank'>
+                                <a href='http://adventure.goodwindevelopmentinc.com' target='_blank'>
                                     <img src={AdventureApp} alt='project1' className='projectImg' />
                                 </a>
                             </div>
@@ -53,7 +53,7 @@ class Projects extends Component {
                         {/*===| Work in progress project |=================================*/}
                         <div className='projectHolder'>
                             <div className='macbookHolder'>
-                                <a href='http://goodwindevelopmentinc.com:3002/#/' target='_blank'>
+                                <a href='http://wip.goodwindevelopmentinc.com' target='_blank'>
                                     <img src={WipApp} alt='project1' className='projectImg' />
                                 </a>
                             </div>

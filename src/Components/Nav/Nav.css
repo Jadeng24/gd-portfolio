@@ -447,9 +447,10 @@ transition-delay: 5s;
 .showSocialLinks {
     transition: 1.5s;
     transition-delay: .4s;
+    margin-bottom: 60px;
 }
 .hideSocialLinks {
-    margin-bottom: 50px;
+    margin-bottom: 120px;
     transition: .3s;
     transition-delay: .3s;
     margin-left: -75px;
