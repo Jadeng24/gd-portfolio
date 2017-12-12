@@ -114,8 +114,8 @@ class Home extends Component {
                             
                         </div>
 
-                        <div className='homeMid midSec2'>
-                            <h1>Hello</h1>
+                        {/* <div className='homeMid midSec2'>
+                            <h1>View Projects</h1>
                         </div>
                         
                         <div className='homeMid midSec3'>
@@ -124,7 +124,7 @@ class Home extends Component {
 
                         <div className='homeMid midSec4'>
                             <h1>Hello</h1>
-                        </div>
+                        </div> */}
 
 
                     </div>
