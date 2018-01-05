@@ -5,6 +5,8 @@ import Footer from '../Footer/Footer.js';
 import Macbook from '../Assets/macbook.png';
 import WipApp from '../Assets/WipLanding.png';
 import AdventureApp from '../Assets/landing.png';
+import PopUpTravelApp from '../Assets/popuptravel.png';
+import GobiOutDoors from '../Assets/GobiOutdoors.png';
 class Projects extends Component {
     constructor() {
         super();
@@ -28,13 +30,25 @@ class Projects extends Component {
                         </div>
                         {/*===| Project section |=================================*/}
 
+                        {/*===| Work in progress project |=================================*/}
+                        <div className='projectHolder'>
+                            <div className='macbookHolder'>
+                                <a href='http://popuptravel.net' target='_blank'>
+                                    <img src={PopUpTravelApp} alt='project1' className='projectImg' />
+                                </a>
+                            </div>
+                            <div className='projectInfoHolder'>
+                                <h3 className='projectTitle'> Pop Up Travel</h3>
+                                <p className='projectDesc'> Pop-up trailer website with e-commerse product / cart features. Admin page using axios calls to get, add, and delete products and pictures. Implemented Stripe Checkout. Handling user data with Node using PostrgreSQL database with massive and express.   </p>
+                            </div>
 
+                        </div>
 
 
                         {/*===| Adventure App Project |=================================*/}
                         <div className='projectHolder'>
                             <div className='macbookHolder'>
-                                <a href='http://adventure.goodwindevelopmentinc.com' target='_blank'>
+                                <a href='http://adventure.goodwindev.tech' target='_blank'>
                                     <img src={AdventureApp} alt='project1' className='projectImg' />
                                 </a>
                             </div>
@@ -53,7 +67,7 @@ class Projects extends Component {
                         {/*===| Work in progress project |=================================*/}
                         <div className='projectHolder'>
                             <div className='macbookHolder'>
-                                <a href='http://wip.goodwindevelopmentinc.com' target='_blank'>
+                                <a href='http://wip.goodwindev.tech' target='_blank'>
                                     <img src={WipApp} alt='project1' className='projectImg' />
                                 </a>
                             </div>
@@ -70,13 +84,13 @@ class Projects extends Component {
                         {/*===| another project |=================================*/}
                         <div className='projectHolder'>
                             <div className='macbookHolder'>
-                                <a href='http://goodwindevelopmentinc.com:3002/#/' target='_blank'>
-                                    <img src={WipApp} alt='project1' className='projectImg' />
+                                <a href='http://gobioutdoors.com:3002/#/' target='_blank'>
+                                    <img src={GobiOutDoors} alt='project1' className='projectImg' />
                                 </a>
                             </div>
                             <div className='projectInfoHolder'>
-                                <h3 className='projectTitle'> Project Title</h3>
-                                <p className='projectDesc'>Description of project</p>
+                                <h3 className='projectTitle'> (In-Progress) Gobi Outdoors</h3>
+                                <p className='projectDesc'>Website for outdoor equipment / camping trailers, electric ARB fridges, and Roof top tents.</p>
                             </div>
 
                         </div>

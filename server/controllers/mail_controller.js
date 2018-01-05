@@ -14,8 +14,7 @@ module.exports = {
         console.log("req.body", req.body)
         // setup email data with unicode symbols
         // JADEN, you change all the values to from: to: subject: and html:
-        // for example mine is sending an email from karlnorthfilms@gmail.com
-        //it is sending to karlnorthfilms@gmail.com
+        
         // the subject says new customer (whatever they put there name as in my input filed that got sent through state)
         //html section you can litterally send an html file as an email.
         let mailOptions = {
