@@ -23,7 +23,7 @@ module.exports = {
             subject: req.body.subject, // Subject line
             // text: 'testing one two on two' // plain text body
             html: `
-            <p>You have a message from ${req.body.name}</p>
+            <p>You have a message from ${req.body.name}<br/>${req.body.email}</p>
             <div style="width: 100%; min-height:30%; display: flex; justify-content:center; align-items:center; background: #eee;">
                 <div style="width:90%; background: white;border-radius:5px; min-height:250px;margin:10px 0px">
                 <h1 style="width:100%; padding:20px 0px;background:#235aa6;border-bottom:solid 1px #777;text-align:center;color:white;">${req.body.subject}</h1><br>
