@@ -59,24 +59,12 @@ class Projects extends Component {
                             </div>
                             <div className='projectInfoHolder'>
                                 <h3 className='projectTitle'> Community Health Connect</h3>
-                                <p className='projectDesc'>During my time at Utah Valley University, I worked along side a team of 8 students to create a new website for CHC. They are a non-profit organization that strives to bring health care to the low-income community. I coded the website while the other students handled sitemap and wireframe, UI/UX, and advertizing videos.</p>
+                                <p className='projectDesc'>During my time at Utah Valley University, I worked along side a team of 8 students to create a new website for CHC. They are a non-profit organization that strives to bring health care to the low-income community. I coded the front-end of the website while the other students handled sitemap and wireframe, UI/UX, and advertizing videos.</p>
                             </div>
 
                         </div>
 
-                        {/*===| Work in progress project |=================================*/}
-                        <div className='projectHolder'>
-                            <div className='macbookHolder'>
-                                <a href='http://popuptravel.net' target='_blank'>
-                                    <img src={PopUpTravelApp} alt='project1' className='projectImg' />
-                                </a>
-                            </div>
-                            <div className='projectInfoHolder'>
-                                <h3 className='projectTitle'> Pop Up Travel</h3>
-                                <p className='projectDesc'> Pop-up trailer website with e-commerse product / cart features. Admin page using axios calls to get, add, and delete products and pictures. Implemented Stripe Checkout. Handling user data with Node using PostrgreSQL database with massive and express.   </p>
-                            </div>
 
-                        </div>
 
                         {/*===| Work in progress project |=================================*/}
                         <div className='projectHolder'>
@@ -92,13 +80,32 @@ class Projects extends Component {
                             </div>
 
                         </div>
+                        
+
+
+
+                        {/*===| Work in progress project |=================================*/}
+                        <div className='projectHolder'>
+                            <div className='macbookHolder'>
+                                <a href='http://popuptravel.net' target='_blank'>
+                                    <img src={PopUpTravelApp} alt='project1' className='projectImg' />
+                                </a>
+                            </div>
+                            <div className='projectInfoHolder'>
+                                <h3 className='projectTitle'> Pop Up Travel(Work in Progress)</h3>
+                                <p className='projectDesc'> Pop-up trailer website with e-commerse product / cart features. Admin page using axios calls to get, add, and delete products and pictures. Implemented Stripe Checkout. Handling user data with Node using PostrgreSQL database with massive and express.   </p>
+                            </div>
+
+                        </div>
+
+                       
 
 
 
                         {/*===| Gobi outdoors project |=================================*/}
                         <div className='projectHolder'>
                             <div className='macbookHolder'>
-                                <a href='http://gobioutdoors.com:3002/#/' target='_blank'>
+                                <a href='http://gobioutdoors.goodwindev.tech' target='_blank'>
                                     <img src={GobiOutDoors} alt='project1' className='projectImg' />
                                 </a>
                             </div>
