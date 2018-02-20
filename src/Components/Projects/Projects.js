@@ -105,7 +105,7 @@ class Projects extends Component {
                         {/*===| Gobi outdoors project |=================================*/}
                         <div className='projectHolder'>
                             <div className='macbookHolder'>
-                                <a href='http://gobioutdoors.goodwindev.tech' target='_blank'>
+                                <a href='http://gobioutdoors.com' target='_blank'>
                                     <img src={GobiOutDoors} alt='project1' className='projectImg' />
                                 </a>
                             </div>
