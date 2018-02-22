@@ -74,7 +74,7 @@ class Projects extends Component {
                                 </a>
                             </div>
                             <div className='projectInfoHolder'>
-                                <h3 className='projectTitle'> WIP (Work In Progress)</h3>
+                                <h3 className='projectTitle'> WIP</h3>
                                 <p className='projectDesc'>LinkedIn-inspired Education Advancement Tool - Progress tracker. </p><p className='projectDesc'>Constructed the ability to upload images via Cloudinary and Dropzone Facilitated the transferal of user info to/from database by HTTP Requests
                             Demonstrated teamwork skills using trello and 10+ hrs of pair programming</p>
                             </div>
@@ -92,7 +92,7 @@ class Projects extends Component {
                                 </a>
                             </div>
                             <div className='projectInfoHolder'>
-                                <h3 className='projectTitle'> Pop Up Travel(Work in Progress)</h3>
+                                <h3 className='projectTitle'> Pop Up Travel(In-Progress)</h3>
                                 <p className='projectDesc'> Pop-up trailer website with e-commerse product / cart features. Admin page using axios calls to get, add, and delete products and pictures. Implemented Stripe Checkout. Handling user data with Node using PostrgreSQL database with massive and express.   </p>
                             </div>
 
