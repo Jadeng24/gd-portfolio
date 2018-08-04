@@ -20,7 +20,7 @@ class About extends Component {
                     <div className='About mainContent'>
                         <div className='mainContentTitle'><h1>About Me</h1></div>
                         <div className='mainContentP'>
-                            <p>I am a former door-to-door salesman, transitioning into a career in full-stack software engineering. I get exciting solving problems and bringing new ideas to the table. I am very detail-oriented and strive for the best mobile, tablet, and desktop applications / websites. <Link to='/contact'>Send me a message</Link></p>
+                            <p>I am a full-stack software engineer with a passion to always find a better methods of coding. I enjoy solving problems and bringing new ideas to the table. I stand out with my dedication to creating beautifully pleasing and natural interfaces. I want to bring my apps / websites to life. Im very detail-oriented and strive for the best mobile, tablet, and desktop applications / websites. <Link to='/contact'>Send me a message</Link></p>
                                 <br/><br/>
                                 <h3>A few of my accomplishments include:</h3>
                                 <ul>

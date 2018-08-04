@@ -8,10 +8,11 @@ import AdventureApp from '../Assets/landing.png';
 import PopUpTravelApp from '../Assets/popuptravel.png';
 import GobiOutDoors from '../Assets/GobiOutdoors.png';
 import CommHealthConnect from '../Assets/chc.png';
+import SharendipityVideo from '../Assets/sharendipity.mp4';
+import iPhoneXFrame from '../Assets/iPhoneX.png';
 class Projects extends Component {
     constructor() {
         super();
-
         this.state = {
 
         }
@@ -27,11 +28,27 @@ class Projects extends Component {
                         <div className='mainContentP'>
                             <p>Here are a few of my projects</p>
 
-
                         </div>
                         {/*===| Project section |=================================*/}
 
-                        
+
+                        {/*===| Sharendipity Mobile App |=================================*/}
+                        <div className='projectHolder'>
+                            <a href='https://itunes.apple.com/us/app/sharendipity/id1254290901?mt=8' target='_blank'>
+                                <div className="iPhoneXHolder">
+                                    <img src={iPhoneXFrame} className='iPhoneXFrame' />
+                                    <video className="videoPlayer" autoPlay="true" loop>
+                                        <source src={SharendipityVideo} type="video/mp4" />
+                                    </video>
+                                </div>
+                            </a>
+                            <div className='projectInfoHolder'>
+                                <h3 className='projectTitle'> Sharendipity </h3>
+                                <p className='projectDesc'>A way to share your things and keep track of who is borrowing your items. Find things you are looking for without having to buy or rent.</p>
+                                <p className='projectDesc'> Built data intensive pages with rich components with 10+ pages. Also Developed all front-end with Angular 2+ with Ionic Native.
+                                <br />  Available on the App store and Google Play store. </p>
+                            </div>
+                        </div>
 
 
                         {/*===| Adventure App Project |=================================*/}
@@ -46,7 +63,6 @@ class Projects extends Component {
                                 <p className='projectDesc'>Personally-developed full-stack web application with some ideas from firewatch website, skullcandy checkout page, and myself which resolve the unexciting feel of ecommerce website experiences. </p>
                                 <p className='projectDesc'>-Fully mobile-responsive with mobile responsive parallax. Users can login, search for campsites by the National Park API, view products in the shop, add products to the cart, and checkout using Stripe. </p>
                             </div>
-
                         </div>
 
 
@@ -61,9 +77,7 @@ class Projects extends Component {
                                 <h3 className='projectTitle'> Community Health Connect </h3>
                                 <p className='projectDesc'>During my time at Utah Valley University, I worked along side a team of 8 students to create a new website for CHC. They are a non-profit organization that strives to bring health care to the low-income community. I coded the front-end of the website while the other students handled sitemap and wireframe, UI/UX, and advertizing videos.</p>
                             </div>
-
                         </div>
-
 
 
                         {/*===| Work in progress project |=================================*/}
@@ -78,10 +92,7 @@ class Projects extends Component {
                                 <p className='projectDesc'>LinkedIn-inspired Education Advancement Tool - Progress tracker. </p><p className='projectDesc'>Constructed the ability to upload images via Cloudinary and Dropzone Facilitated the transferal of user info to/from database by HTTP Requests
                             Demonstrated teamwork skills using trello and 10+ hrs of pair programming</p>
                             </div>
-
                         </div>
-                        
-
 
 
                         {/*===| Work in progress project |=================================*/}
@@ -95,11 +106,7 @@ class Projects extends Component {
                                 <h3 className='projectTitle'> Pop Up Travel (In-Progress)</h3>
                                 <p className='projectDesc'> Pop-up trailer website with e-commerse product / cart features. Admin page using axios calls to get, add, and delete products and pictures. Implemented Stripe Checkout. Handling user data with Node using PostrgreSQL database with massive and express.   </p>
                             </div>
-
                         </div>
-
-                       
-
 
 
                         {/*===| Gobi outdoors project |=================================*/}
@@ -113,9 +120,8 @@ class Projects extends Component {
                                 <h3 className='projectTitle'>Gobi Outdoors (In-Progress)</h3>
                                 <p className='projectDesc'>Website for outdoor equipment / camping trailers, electric ARB fridges, and Roof top tents.</p>
                             </div>
-
                         </div>
-                        
+
                     </div>
                 </div>
                 <Footer />

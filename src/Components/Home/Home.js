@@ -18,11 +18,11 @@ class Home extends Component {
         setTimeout(this.myWaitTime, 300);
     }
     myWaitTime() {
-       
-        window.scrollTo(0,400);
-}    
+
+        window.scrollTo(0, 400);
+    }
     render() {
-        
+
         return (
 
             // home holder            
@@ -36,7 +36,7 @@ class Home extends Component {
                         {/*===| Top section of home |=================================*/}
 
                         <div className='homeTop'>
-                          
+
                             <Link to='/about'><h1 className='title1'>
                                 <span className='char'>H</span>
                                 <span className='char'>i</span>
@@ -49,7 +49,7 @@ class Home extends Component {
                                 <span className='char'>d</span>
                                 <span className='char'>e</span>
                                 <span className='char'>n</span>
-                                
+
                             </h1>
                                 <h2 className='title2'>
                                     <span >A </span>
@@ -77,18 +77,22 @@ class Home extends Component {
                                     <span >r</span>
                                 </h2></Link>
                             <div className='homeTopBtnsHolder'>
-                            <Link to='/contact'><div className='callToActionBtn'>CONTACT ME</div></Link>
-                                <a href="#expertise"><i className="fa fa-chevron-down" aria-hidden="false" id="expertise"></i></a>
-                            </div>    
+                                <Link to='/contact'><div className='callToActionBtn'>CONTACT ME</div></Link>
+                                <a href="#expertise"><div className="MoreBtn">
+                                    More
+                                        <i className="fa fa-chevron-down" aria-hidden="false" id="expertise"></i>
+                                </div>
+                                </a>
+                            </div>
                         </div>
-                         
-                            {/* onClick={this.scrollDown}    */}
+
+                        {/* onClick={this.scrollDown}    */}
 
                         {/*===| Mid section of home |=================================*/}
 
                         <div className='homeMid' >
                             <div className='homeMidTitleHolder' >
-                                   
+
                                 <h2 className='homeMidTitle'>My Expertise</h2>
                                 <h4 className='homeMidSubTitle'>I've got skills in all phases of the development process</h4>
                                 <Link to='/projects' className='viewWorkBtn'><span>View my work</span><i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
@@ -111,7 +115,7 @@ class Home extends Component {
                                 </div>
 
                             </div>
-                            
+
                         </div>
 
                         {/* <div className='homeMid midSec2'>

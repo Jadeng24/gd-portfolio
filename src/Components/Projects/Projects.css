@@ -16,6 +16,13 @@
     justify-content: flex-start;
     align-items: center;
     padding-left: 10%;
+    padding-bottom: 20px;
+    transition: .5s;
+}
+@media (min-width: 700px) {
+    .projectHolder:hover {
+    transform: scale(1.05);
+}
 }
 @media (max-width:960px) {
     .projectHolder {
@@ -40,6 +47,36 @@
         padding-bottom: 20px;
     }
     
+}
+.iPhoneXHolder {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* overflow: hidden; */
+    border-radius: 20px;
+}
+.iPhoneXFrame {
+    /* background: red; */
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 240px;
+    height: 400px;
+    margin-top: 16px;
+    z-index: 10;
+}
+.videoPlayer {
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+    align-self: center;
+    transition: .3s;
 }
 .macbookHolder {
     width: 300px;
@@ -92,6 +129,6 @@
     font-size: 12pt;
     font-family: MontsRegular,Arial, Helvetica, sans-serif;
     color: #2360a6;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 

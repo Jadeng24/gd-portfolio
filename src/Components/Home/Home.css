@@ -51,6 +51,16 @@ overflow-x: hidden;
     margin-bottom: 50px;
 
 }
+.MoreBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 .callToActionBtn {
     /* position: absolute; */
     display: flex;
@@ -101,7 +111,7 @@ overflow-x: hidden;
 }
 .homeTop span:hover {
     color: #2360a6;
-    transition: .2s;
+    /* transition: .2s; */
     background: white;
 }
 
@@ -119,12 +129,11 @@ overflow-x: hidden;
 
 .homeMid {
     background: white;
-    min-height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .homeMidTitleHolder {
@@ -134,16 +143,17 @@ overflow-x: hidden;
     width: 100%;
     background: #eee;
     padding-bottom: 20px;
+    padding: 80px 0px;
 }
 .homeMidTitle {
-    margin-top: 40px;
+    margin-bottom: 10px;
     font-size: 30pt;
     font-family: LeagueSpartan,Arial, Helvetica, sans-serif;
 
 }
 .homeMidSubTitle {
     font-size: 20pt;
-    padding: 10px 20px;
+    padding: 20px 20px;
     text-align: center;
     font-family: MontsRegular,Arial, Helvetica, sans-serif;
 }
@@ -231,9 +241,6 @@ overflow-x: hidden;
     min-height: 100vh;
     justify-content: flex-start;
 }   
-.midSec3 {
-    
-}
 .midSec4 {
     background: #2360a6;
     min-height: 100vh;
