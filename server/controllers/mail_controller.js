@@ -6,6 +6,7 @@ module.exports = {
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
             service: process.env.service,
+            secure: true,
             auth: {
                 user: process.env.website_email,
                 pass: process.env.website_pass
@@ -24,10 +25,10 @@ module.exports = {
             // text: 'testing one two on two' // plain text body
             html: `
             <p>You have a message from ${req.body.name}<br/>${req.body.email}</p>
-            <div style="width: 100%; min-height:30%; display: flex; justify-content:center; align-items:center; background: #eee;">
-                <div style="width:90%; background: white;border-radius:5px; min-height:250px;margin:10px 0px">
-                <h1 style="width:100%; padding:20px 0px;background:#235aa6;border-bottom:solid 1px #777;text-align:center;color:white;">${req.body.subject}</h1><br>
-                <p style=" padding:10px 20px;">${req.body.message}</p>
+            <div style="width: 100%; min-height:30%; background: #eee; padding-top: 10px; padding-bottom:10px">
+                <div style="width:90%; background: white; border-radius:5px; min-height:250px; margin-left: 5%">
+                    <h1 style="width:100%; padding:20px 0px;background:#235aa6;border-bottom:solid 1px #777;text-align:center;color:white;">${req.body.subject}</h1><br>
+                    <p style=" padding:10px 20px;">${req.body.message}</p>
                 </div>
             </div>
             <hr/>
