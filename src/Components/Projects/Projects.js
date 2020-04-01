@@ -5,8 +5,9 @@ import Footer from '../Footer/Footer.js';
 import Macbook from '../Assets/macbook.png';
 import WipApp from '../Assets/WipLanding.png';
 import AdventureApp from '../Assets/landing.png';
+import BlipMarketplace from '../Assets/blipMarketplace.png';
 import PopUpTravelApp from '../Assets/popuptravel.png';
-import GobiOutDoors from '../Assets/GobiOutdoors.png';
+import BlipSupply from '../Assets/BlipSupply.jpg';
 import CommHealthConnect from '../Assets/chc.png';
 import SharendipityVideo from '../Assets/sharendipity.mp4';
 import iPhoneXFrame from '../Assets/iPhoneX.png';
@@ -32,6 +33,34 @@ class Projects extends Component {
                         {/*===| Project section |=================================*/}
 
 
+                        {/*===| Blip Supply project |=================================*/}
+                        <div className='projectHolder'>
+                            <div className='macbookHolder'>
+                                <a href='https://operator.blipbillboards.com/' target='_blank'>
+                                    <img src={BlipSupply} alt='Supply' className='projectImg' />
+                                </a>
+                            </div>
+                            <div className='projectInfoHolder'>
+                                <h3 className='projectTitle'>Operator Sign Admin</h3>
+                                <p className='projectDesc'>An Angular application converted from an old AngularJs app to a new Angular8+ with Material Design application.</p>
+                            </div>
+                        </div>
+
+
+                        {/*===| Blip Marketplace project |=================================*/}
+                        <div className='projectHolder'>
+                            <div className='macbookHolder'>
+                                <a href='https://marketplace.blipbillboards.com/' target='_blank'>
+                                    <img src={BlipMarketplace} alt='Marketplace' className='projectImg' />
+                                </a>
+                            </div>
+                            <div className='projectInfoHolder'>
+                                <h3 className='projectTitle'>Blip Marketplace</h3>
+                                <p className='projectDesc'>No contract digital billboard advertising for small and medium-sized businesses. Built with Angular 8 with material Design with a Python Django backend.  </p>
+                            </div>
+                        </div>
+
+
                         {/*===| Sharendipity Mobile App |=================================*/}
                         <div className='projectHolder'>
                             <a href='https://itunes.apple.com/us/app/sharendipity/id1254290901?mt=8' target='_blank'>
@@ -54,7 +83,7 @@ class Projects extends Component {
                         {/*===| Adventure App Project |=================================*/}
                         <div className='projectHolder'>
                             <div className='macbookHolder'>
-                                <a href='http://adventure.goodwindev.tech' target='_blank'>
+                                <a href='https://github.com/Jadeng24/adventure-app' target='_blank'>
                                     <img src={AdventureApp} alt='project1' className='projectImg' />
                                 </a>
                             </div>
@@ -70,7 +99,7 @@ class Projects extends Component {
                         <div className='projectHolder'>
                             <div className='macbookHolder'>
                                 <a href='https://www.utahchc.org/' target='_blank'>
-                                    <img src={CommHealthConnect} alt='project1' className='projectImg' />
+                                    <img src={CommHealthConnect} alt='project2' className='projectImg' />
                                 </a>
                             </div>
                             <div className='projectInfoHolder'>
@@ -83,8 +112,8 @@ class Projects extends Component {
                         {/*===| Work in progress project |=================================*/}
                         <div className='projectHolder'>
                             <div className='macbookHolder'>
-                                <a href='http://wip.goodwindev.tech' target='_blank'>
-                                    <img src={WipApp} alt='project1' className='projectImg' />
+                                <a href='https://github.com/Work-In-Progress-DevMtn/Work-In-Progress' target='_blank'>
+                                    <img src={WipApp} alt='project3' className='projectImg' />
                                 </a>
                             </div>
                             <div className='projectInfoHolder'>
@@ -98,8 +127,8 @@ class Projects extends Component {
                         {/*===| Work in progress project |=================================*/}
                         <div className='projectHolder'>
                             <div className='macbookHolder'>
-                                <a href='http://popuptravel.net' target='_blank'>
-                                    <img src={PopUpTravelApp} alt='project1' className='projectImg' />
+                                <a href='https://github.com/Jadeng24/popUp-travel' target='_blank'>
+                                    <img src={PopUpTravelApp} alt='project4' className='projectImg' />
                                 </a>
                             </div>
                             <div className='projectInfoHolder'>
@@ -108,19 +137,6 @@ class Projects extends Component {
                             </div>
                         </div>
 
-
-                        {/*===| Gobi outdoors project |=================================*/}
-                        <div className='projectHolder'>
-                            <div className='macbookHolder'>
-                                <a href='http://gobioutdoors.com' target='_blank'>
-                                    <img src={GobiOutDoors} alt='project1' className='projectImg' />
-                                </a>
-                            </div>
-                            <div className='projectInfoHolder'>
-                                <h3 className='projectTitle'>Gobi Outdoors (In-Progress)</h3>
-                                <p className='projectDesc'>Website for outdoor equipment / camping trailers, electric ARB fridges, and Roof top tents.</p>
-                            </div>
-                        </div>
 
                     </div>
                 </div>

@@ -15,7 +15,8 @@ class Changepage extends Component{
     }
 
     nextPage() {
-        window.location.assign('http://localhost:3000/messagesent')
+        // Change to localhost:3002 for develop
+        window.location.assign('http://develoquent.com/messagesent')
     }
     render(){
         return (

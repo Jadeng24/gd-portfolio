@@ -97,10 +97,10 @@
     left: 38px;
     transition: .2s;
 }
-.projectImg:hover {
+a .projectImg:hover {
     opacity: .5;
 }
-.projectImg:active {
+a .projectImg:active {
     opacity: 1;
     transition: 0s;
 }

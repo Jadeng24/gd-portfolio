@@ -41,7 +41,7 @@ class Home extends Component {
                                 <span className='char'>H</span>
                                 <span className='char'>i</span>
                                 <span className='char'>, </span>
-                                <span className='char'>i</span>
+                                <span className='char'>I</span>
                                 <span className='char'>'</span>
                                 <span className='char'>m </span>
                                 <span className='char'>J</span>
@@ -53,20 +53,20 @@ class Home extends Component {
                             </h1>
                                 <h2 className='title2'>
                                     <span >A </span>
-                                    <span >f</span>
+                                    <span >F</span>
                                     <span >u</span>
                                     <span >l</span>
                                     <span >l</span>
                                     <span >-</span>
-                                    <span >s</span>
+                                    <span >S</span>
                                     <span >t</span>
                                     <span >a</span>
                                     <span >c</span>
                                     <span >k </span>
-                                    <span >w</span>
+                                    <span >W</span>
                                     <span >e</span>
                                     <span >b </span>
-                                    <span >d</span>
+                                    <span >D</span>
                                     <span >e</span>
                                     <span >v</span>
                                     <span >e</span>
@@ -86,34 +86,34 @@ class Home extends Component {
                             </div>
                         </div>
 
-                        {/* onClick={this.scrollDown}    */}
-
                         {/*===| Mid section of home |=================================*/}
 
-                        <div className='homeMid' >
+                        <div className='homeMid'>
                             <div className='homeMidTitleHolder' >
 
                                 <h2 className='homeMidTitle'>My Expertise</h2>
-                                <h4 className='homeMidSubTitle'>I've got skills in all phases of the development process</h4>
-                                <Link to='/projects' className='viewWorkBtn'><span>View my work</span><i className="fa fa-long-arrow-right" aria-hidden="true"></i></Link>
+                                <h4 className='homeMidSubTitle'>I have a wide-variety of experience in each phase of the development process</h4>
+                                <Link to='/projects' className='viewWorkBtn'>
+                                    <span>View my work</span>
+                                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                </Link>
                             </div>
 
                             <div className='homeMid3Section'>
                                 <div className='homeMidSection'>
                                     <h2>Ideas</h2>
-                                    <p>I collaborate with clients and peers to establish and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start.</p>
+                                    <p>I collaborate with clients and peers to establish and transform ideas into well thought out plans. Communication is crucial from a beginning idea all the way through to production.</p>
                                 </div>
 
                                 <div className='homeMidSection'>
-                                    <h2>UI/UX</h2>
-                                    <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and high-performance designs. I'm a minimalist who truly believes that less is more.</p>
+                                    <h2>Architecture</h2>
+                                    <p>I have an architectural mind and construct well thought-out architecture to encourage future-proof code and a strong project foundation. Helping my peers and those I mentor understand these principles is important step in keeping code clean and consistent.</p>
                                 </div>
 
                                 <div className='homeMidSection'>
                                     <h2>Code</h2>
-                                    <p>I design front start to finish with the client and user experience always first in mind. I enjoy keeping code simple and using best practices creating a professional and maintainable website/application. </p>
+                                    <p>I lead in engineering complex custom components and features while always keeping in mind modern best practices, page load time, UI/UX consistency for the user, data management, and code reliability that will stand the test of time.</p>
                                 </div>
-
                             </div>
 
                         </div>
