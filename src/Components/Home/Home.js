@@ -70,7 +70,7 @@ class Home extends Component {
                                     <span >w</span>
                                     <span >a</span>
                                     <span >r</span>
-                                    <span >e</span>
+                                    <span >e </span>
                                     <span >E</span>
                                     <span >n</span>
                                     <span >g</span>
