@@ -54,7 +54,7 @@ class Skills extends Component {
                         </div>
 
                         <div className='mainContentP'>
-                            <p>With over 3 years of experience in full-stack software engineering and web / app development, I am confident I will be an excellent fit as a Software Engineer for NICE InContact. My previous work experience has set me apart with unique leadership skills and a wide variety of technical languages necessary to bring great value to the dev team, and company as a whole.</p>
+                            <p>With over 3 years of experience in full-stack software engineering and web & app development, I am confident I will be a great asset to you and your company. My previous work experience has set me apart with unique leadership skills and a wide variety of technical languages necessary to bring great value to the dev team, and company as a whole.</p>
                             <br />
 
                             <p>While I worked at Blip Billboards, I developed 2 major out-of-home advertising applications, one giving thousands of digital-billboard sign owners the ability to upload and manage their billboards, and the other a full-fledged advertising campaign tool servicing over hundreds of thousands of advertisers all over North America. To help future-proof web applications, I facilitated the conversion of an old AngularJs application to a new Angular9+ framework. People say I have an eye for design and am a wizard at front-end development.</p>
