@@ -5,8 +5,8 @@ const express = require('express'),
     massive = require('massive'),
     cors = require('cors'),
     axios = require('axios'),
+    chuck_controller = require('./controllers/chuck_controller'),
     mail_controller = require('./controllers/mail_controller');
-
 
 const app = express();
 
@@ -18,12 +18,13 @@ app.use(session({
     resave: false,
     saveUninitialized: true
 }))
- 
+
 //=====| ENDPOINTS |==================================
 
 //---Send message through nodemailer---/
-app.post('/api/send_email', mail_controller.sendEmail) // set up the end point
+app.post('/api/send_email', mail_controller.sendEmail); // set up the end point
 
+app.get('/api/get_joke', chuck_controller.getJoke);
 
 // for setting up online
 const path = require('path')

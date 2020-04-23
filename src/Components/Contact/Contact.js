@@ -4,7 +4,7 @@ import Nav from '../Nav/Nav.js';
 import Footer from '../Footer/Footer.js';
 import axios from 'axios';
 import codingVideo from './For_Wes.mp4';
-import { Link } from 'react-router-dom';
+
 class Contact extends Component {
     constructor() {
         super();

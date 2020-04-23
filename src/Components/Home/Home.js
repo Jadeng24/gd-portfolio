@@ -63,18 +63,23 @@ class Home extends Component {
                                     <span >a</span>
                                     <span >c</span>
                                     <span >k </span>
-                                    <span >W</span>
-                                    <span >e</span>
-                                    <span >b </span>
-                                    <span >D</span>
-                                    <span >e</span>
-                                    <span >v</span>
-                                    <span >e</span>
-                                    <span >l</span>
+                                    <span >S</span>
                                     <span >o</span>
-                                    <span >p</span>
+                                    <span >f</span>
+                                    <span >t</span>
+                                    <span >w</span>
+                                    <span >a</span>
+                                    <span >r</span>
+                                    <span >e</span>
+                                    <span >E</span>
+                                    <span >n</span>
+                                    <span >g</span>
+                                    <span >i</span>
+                                    <span >n</span>
+                                    <span >e</span>
                                     <span >e</span>
                                     <span >r</span>
+
                                 </h2></Link>
                             <div className='homeTopBtnsHolder'>
                                 <Link to='/contact'><div className='callToActionBtn'>CONTACT ME</div></Link>
