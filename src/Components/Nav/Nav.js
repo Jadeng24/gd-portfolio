@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './Nav.css';
 import { Link } from 'react-router-dom';
 // main logo
-import gdLogoWhite from '../Assets/gdLogoWhite.png';
+
+import develoquentLogo from '../Assets/develoquentLogo1.png';
 // nav icons
 import ProjectIcon from '../Assets/codeIconWhite.png';
 import ContactIcon from '../Assets/contactWhite.png';
@@ -36,8 +37,8 @@ class Nav extends Component {
 
 
                     <div className='navSection logoNav'>
-                        <div className='gdLogoHolder'>
-                            <Link to={'/'}><img src={gdLogoWhite} alt='GD' className='gdLogo' /> </Link>
+                        <div className='devLogoHolder'>
+                            <Link to={'/'}><img src={develoquentLogo} alt='GD' className='devLogo' /> </Link>
                         </div>
                     </div>
 
@@ -53,7 +54,7 @@ class Nav extends Component {
                         <a href='https://www.facebook.com/jadengoodwin24' target='_blank'><img src={fbLogo} alt='logo' /></a>
                         <a href='https://www.linkedin.com/in/jaden-goodwin-7475bb13a/' target='_blank'><img src={LinLogo} alt='logo' /></a>
                         <a href='https://twitter.com/Goodwin_Dev' target='_blank'><img src={twiLogo} alt='logo' /></a>
-                        <a href='https://www.instagram.com/jaden_g24/' target='_blank'><img src={insLogo} alt='logo' /></a>
+                        <a href='https://www.instagram.com/dev_eloquent/' target='_blank'><img src={insLogo} alt='logo' /></a>
                     </div>
                     {/* drop down menu button */}
                     <div className='dropDownMenuBtn' onClick={this.toggleMenuFunc}>

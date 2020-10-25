@@ -37,32 +37,27 @@ align-items: center;
 
 }
 
-.gdLogoHolder {
+.devLogoHolder {
     margin-left: -2px;
-    height: 60px;
+    height: 50px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.gdLogo {
+.devLogo {
     padding: 0px 2px;
-    height: 30px;
+    height: 50px;
     filter: invert(0%);
     border-radius: 50px;
     transition: .1s;
     
 }
-.gdLogo:hover {
-    filter: hue-rotate(180deg);
-    filter: invert(100%);
-    background: #DCA559;
-    background: linear-gradient(120deg,#DCA559 40%,#EFE4C4);
-    /* opposite of#43B0F1; */
-
+.devLogo:hover {
+    transform: scale(.92);
 }
-.gdLogo:active {
-    background: white;
+.devLogo:active {
+    background: linear-gradient(120deg,#101b3b 20%,#235aa6);
     
 }
 /* center nav   */
@@ -138,7 +133,7 @@ align-items: center;
 .NavHolder {
     min-width: 330px;
 }
- .gdLogoHolder {
+ .devLogoHolder {
         margin-left: 20px;
     }
 .logoNav {
@@ -180,9 +175,9 @@ align-items: center;
 
     }
    
-    .gdLogo {
-        width: 60px;
-        height: 26px;
+    .devLogo {
+        /* width: 60px; */
+        height: 40px;
     }
     .logoNav {
         height: 10%;
@@ -245,7 +240,7 @@ align-items: center;
         height: 25%; 
         min-height: 130px;
 }
-.gdLogoHolder {
+.devLogoHolder {
     margin-left: 2px;
     }
 }
